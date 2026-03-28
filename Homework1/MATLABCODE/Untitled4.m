@@ -1,0 +1,11 @@
+close all;
+Im = imread('Im2.jpg');
+RedIm = Im; GreenIm = Im; BlueIm = Im;
+RedIm(:,:,[2,3]) = 0;
+GreenIm(:,:,[1,3]) = 0;
+BlueIm(:,:,[1,2]) = 0;
+figure; 
+subplot(2,2,1); imshow(Im);
+subplot(2,2,2); imshow(RedIm);
+subplot(2,2,3);imshow(GreenIm);
+subplot(2,2,4); imshow(BlueIm);
